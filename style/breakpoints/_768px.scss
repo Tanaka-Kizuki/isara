@@ -1,0 +1,114 @@
+.header {
+  &__inner {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
+  &__title {
+    position: relative;
+    bottom: -10px;
+    font-size: 12px;
+
+    & p {
+      margin-bottom: 0;
+    }
+  }
+  &__logo {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    & img {
+      width: 128px;
+    }
+  }
+  &__contact {
+    display: none;
+  }
+}
+
+.top {
+  padding-top: 75px;
+  &__inner {
+    height: 500px;
+    background-image: url(../../images/main.jpg);
+  }
+  &__text {
+    & p {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  }
+  &__image {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.conversion {
+  &__inner {
+    padding: 30px 0;
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: 300;;
+  }
+  &__link {
+    max-width: 1028px;
+    padding: 25px 50px;
+    margin :10px 80px;
+    & a {
+      color: #fff;
+      font-size: 18px;
+      letter-spacing: 1px;
+      font-weight: 300;
+      & span {
+        display: inline;
+      }
+    }
+  }
+  &__schedule {
+    & p {
+      margin: 25px 0;
+      font-size: 18px;
+      font-weight: 300;
+      & span {
+        display: inline;
+      }
+    }
+  }
+}
+
+.introduction {
+  &__headding {
+    padding: 15px 0;
+    position: relative;
+    width: 860px;
+    margin-bottom: 20px;
+    & span {
+      display: inline;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    &::before {
+      content:"";
+      width:50px;
+      height: 50px;
+    }
+    &::after {
+      content:"";
+      width: 50px;
+      height: 50px;
+    }
+  }
+  &__content {
+    padding: 40px 0;
+    & p {
+      & .para {
+        display: none;
+      }
+    }
+  }
+}
