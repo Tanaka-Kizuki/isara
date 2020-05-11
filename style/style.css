@@ -134,7 +134,9 @@
 }
 
 .conversion__schedule p {
-  margin: 10px 0;
+  margin: 25px 0;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .conversion__contact ul {
@@ -153,5 +155,73 @@
 
 .conversion__contact ul li a {
   color: white;
+}
+
+.introduction {
+  padding: 30px 0;
+  background-image: url(../../images/introduction.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.introduction__headding {
+  margin: 0 8px;
+  padding: 5px 20px;
+  position: relative;
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+.introduction__title {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.introduction__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-top: 4px solid #ebb94d;
+  border-left: 4px solid #ebb94d;
+}
+
+.introduction__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-right: 4px solid #ebb94d;
+  border-bottom: 4px solid #ebb94d;
+}
+
+.introduction__content {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.introduction__content p {
+  font-size: 15px;
+  letter-spacing: 0;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.introduction__content p span {
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(70%, #ebb94d));
+  background: linear-gradient(transparent 70%, #ebb94d 70%);
 }
 /*# sourceMappingURL=style.css.map */
