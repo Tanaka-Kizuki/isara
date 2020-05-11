@@ -1,26 +1,14 @@
-body {
-  font-family: "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
-  line-height: 1.6;
-  font-size: 1.4px;
-  color: #333333;
-  letter-spacing: 1.5px;
-}
-img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-}
 
 .header {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
+  width: 100%;
+  background-color: #fff;
   &__inner {
     height: 62px;
     position: relative;
-    
   }
   &__title {
     position: absolute;
@@ -64,9 +52,10 @@ img {
 
 .top {
   display: table;
-  background-image: url(../../images/top-image.jpg);
-  background-size: cover;
+  padding-top: 62px;
   &__inner {
+    background-image: url(../../images/top-image.jpg);
+    background-size: cover;
     height: 312px;
     padding: 0 15px;
     text-align: center;
@@ -82,7 +71,7 @@ img {
   }
 
   &__image {
-    max-width: 317px;
+    max-width: 480px;
     width: 90%;
     margin: 20px;
   }
@@ -93,4 +82,59 @@ img {
     margin-bottom: 10px;
   }
   
+}
+
+.conversion {
+  text-align: center;
+  background-color: #ebb94d;
+  color: #fff;
+  &__inner {
+    padding: 15px 0;
+  }
+  &__text {
+    font-size: 15px;
+    font-weight: 600;
+    & span {
+      font-size: 90%;
+      color: #c7254e;
+      background-color: #f9f2f4;
+      border-radius: 4px;
+      padding: 2px 4px;
+    }
+  }
+  &__link {
+    background-color: #da6b64;
+    border-radius: 50px;
+    max-width: 1028px;
+    padding: 15px 20px;
+    margin: 20px 20px;
+    margin-top: 25px;
+    & a {
+      color: #fff;
+      font-size: 20px;
+      letter-spacing: 0;
+      font-weight: 600;
+    }
+  }
+  &__schedule {
+    margin: 10px;
+    & p {
+      margin: 10px 0;
+    }
+  }
+  &__contact {
+    & ul {
+      display: flex;
+      & li {
+        display: block;
+        width: 74px;
+        height: 20px;
+        background-color: blue;
+        margin-right: 10px;
+        & a {
+          color: white;
+        }
+      }
+    }
+  }
 }

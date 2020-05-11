@@ -1,23 +1,10 @@
-body {
-  font-family: "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
-  line-height: 1.6;
-  font-size: 1.4px;
-  color: #333333;
-  letter-spacing: 1.5px;
-}
-
-img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-}
-
 .header {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
+  width: 100%;
+  background-color: #fff;
 }
 
 .header__inner {
@@ -72,11 +59,12 @@ img {
 
 .top {
   display: table;
-  background-image: url(../../images/top-image.jpg);
-  background-size: cover;
+  padding-top: 62px;
 }
 
 .top__inner {
+  background-image: url(../../images/top-image.jpg);
+  background-size: cover;
   height: 312px;
   padding: 0 15px;
   text-align: center;
@@ -91,7 +79,7 @@ img {
 }
 
 .top__image {
-  max-width: 317px;
+  max-width: 480px;
   width: 90%;
   margin: 20px;
 }
@@ -100,5 +88,70 @@ img {
   font-size: 15px;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.conversion {
+  text-align: center;
+  background-color: #ebb94d;
+  color: #fff;
+}
+
+.conversion__inner {
+  padding: 15px 0;
+}
+
+.conversion__text {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.conversion__text span {
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+.conversion__link {
+  background-color: #da6b64;
+  border-radius: 50px;
+  max-width: 1028px;
+  padding: 15px 20px;
+  margin: 20px 20px;
+  margin-top: 25px;
+}
+
+.conversion__link a {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+
+.conversion__schedule {
+  margin: 10px;
+}
+
+.conversion__schedule p {
+  margin: 10px 0;
+}
+
+.conversion__contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.conversion__contact ul li {
+  display: block;
+  width: 74px;
+  height: 20px;
+  background-color: blue;
+  margin-right: 10px;
+}
+
+.conversion__contact ul li a {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
