@@ -1,3 +1,28 @@
+.para {
+  display: inline;
+}
+.headding {
+  position: relative;
+  width: 860px;
+  padding: 15px 0;
+  margin-bottom: 20px;
+
+  & .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    
+    &::before {
+      content:"";
+      width:50px;
+      height: 50px;
+    }
+    &::after {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
 .header {
   &__inner {
     height: 75px;
@@ -62,9 +87,6 @@
       font-size: 18px;
       letter-spacing: 1px;
       font-weight: 300;
-      & span {
-        display: inline;
-      }
     }
   }
   &__schedule {
@@ -80,35 +102,133 @@
 }
 
 .introduction {
-  &__headding {
-    padding: 15px 0;
-    position: relative;
-    width: 860px;
-    margin-bottom: 20px;
-    & span {
-      display: inline;
-    }
-  }
-  &__title {
-    font-size: 24px;
-    margin-bottom: 10px;
-    &::before {
-      content:"";
-      width:50px;
-      height: 50px;
-    }
-    &::after {
-      content:"";
-      width: 50px;
-      height: 50px;
-    }
-  }
   &__content {
     padding: 40px 0;
     & p {
+      font-size:16px;
       & .para {
         display: none;
       }
     }
+  }
+}
+
+.about {
+  position: relative;
+  background-color: #fef5e0;
+  & .aboution {
+    top: -40px;
+    height: 80px;
+    & p {
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+      font-size: 14px;
+    }
+  }
+  &__inner {
+    padding-top: 80px;
+    & h3 {
+      font-size: 16px;
+      margin: 40px 0 10px 0;
+    }
+  }
+  &__skills {
+    margin: 30px 20px;; 
+    padding: 30px;
+    max-width: calc(100%-40px);
+    & h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 0;
+    }
+  }
+  &__skill {
+    padding: 10px;
+    display: inline-block;
+    & img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    & p {
+      margin: 10px 0;
+      font-size: 12px;
+      letter-spacing: 1.5px;;
+      & .para {
+        display: block;
+      }
+    }
+  }
+}
+
+.aboutsecond {
+  background-image: url(../../images/about.jpg);
+  & h2 {
+    font-size: 24px;
+    margin: 20px 0;
+    line-height: 1.1;
+    font-weight: 600;
+  }
+  & p {
+    font-size: 18px;
+  }
+  &__container {
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0 30%;
+    & .box {
+      padding: 30px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      & p {
+        background-color: #ebb94d;
+        font-size: 1４px;
+        font-weight: 600;
+      }
+      & .text {
+        & p {
+          margin-bottom: 10px;
+          &:first-of-type {
+            margin: 30px 0 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.learning {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 40px 0;
+}
+
+.aboutthird {
+  padding: 20px 0;
+  & h2 {
+    font-size: 24px;
+    & .fs {
+      font-size: 14px;
+    }
+  }
+  & p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  &__box {
+    padding: 0 30px;
+    margin: 40px;
+  }
+  &__item {
+    padding: 20px;
+    & img {
+      width: 180px;
+    }
+  }
+  & .fs {
+    font-size: 14px;
+    font-weight: 600;
   }
 }

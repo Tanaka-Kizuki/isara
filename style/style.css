@@ -1,3 +1,54 @@
+@charset "UTF-8";
+.para {
+  display: block;
+}
+
+.yellow {
+  color: #ebb94d;
+}
+
+.headding {
+  margin: 0 auto;
+  padding: 5px 20px;
+  position: relative;
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+.headding .title {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.headding .title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-top: 4px solid #ebb94d;
+  border-left: 4px solid #ebb94d;
+}
+
+.headding .title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-right: 4px solid #ebb94d;
+  border-bottom: 4px solid #ebb94d;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -138,10 +189,6 @@
   font-weight: 600;
 }
 
-.conversion__link a span {
-  display: block;
-}
-
 .conversion__schedule {
   margin: 10px;
 }
@@ -190,52 +237,6 @@
   background-size: contain;
 }
 
-.introduction__headding {
-  margin: 0 auto;
-  padding: 5px 20px;
-  position: relative;
-  width: 95%;
-  margin-bottom: 20px;
-}
-
-.introduction__headding span {
-  display: block;
-}
-
-.introduction__title {
-  text-align: center;
-  margin-bottom: 8px;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 40px;
-  margin-top: 20px;
-  margin-bottom: 8px;
-}
-
-.introduction__title::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-top: 4px solid #ebb94d;
-  border-left: 4px solid #ebb94d;
-}
-
-.introduction__title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-right: 4px solid #ebb94d;
-  border-bottom: 4px solid #ebb94d;
-}
-
 .introduction__content {
   text-align: center;
   margin-bottom: 50px;
@@ -254,7 +255,216 @@
   background: linear-gradient(transparent 70%, #ebb94d 70%);
 }
 
+.about {
+  position: relative;
+  background-color: #fef5e0;
+}
+
+.about .aboution {
+  position: absolute;
+  top: -30px;
+  height: 60px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .aboution p {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ebb94d;
+  line-height: 60px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.about__inner {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.about__inner h3 {
+  font-size: 15px;
+  margin: 15px 0 10px 0;
+}
+
+.about__skills {
+  margin: 30px 20px;
+  padding: 10px;
+  border: 2px solid #ebb94d;
+  background-color: #fff;
+  max-width: calc(100%-40px);
+}
+
+.about__skills h3 {
+  font-size: 15px;
+  margin-top: 0;
+}
+
+.about__skill {
+  padding: 5px;
+  display: inline-block;
+}
+
+.about__skill img {
+  width: 30px;
+}
+
+.about__skill p {
+  margin: 10px 0;
+  font-size: 10px;
+}
+
+.aboutsecond {
+  text-align: center;
+  background-image: url(../../images/aboutsecond.jpg);
+  background-size: cover;
+  background-position: top center;
+  padding: 30px;
+  color: #fff;
+}
+
+.aboutsecond h2 {
+  font-size: 18px;
+  margin: 20px 0;
+  line-height: 1.1;
+}
+
+.aboutsecond p {
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
+.aboutsecond p .para {
+  color: #fff;
+}
+
+.aboutsecond p span {
+  color: #ebb94d;
+}
+
+.aboutsecond__container .box {
+  margin-top: 15px;
+  background-color: #fff;
+  padding: 15px 50px;
+  border-radius: 5px;
+}
+
+.aboutsecond__container .box:first-of-type {
+  margin-top: 30px;
+}
+
+.aboutsecond__container .box:last-of-type {
+  margin-bottom: 15px;
+}
+
+.aboutsecond__container .box p {
+  background-color: #ebb94d;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+.aboutsecond__container .box .text p {
+  background-color: #fff;
+  color: black;
+  letter-spacing: 1.5px;
+  margin-bottom: 0;
+}
+
+.learning {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #016ea9;
+  color: #fff;
+  font-size: 12px;
+}
+
+.learning p {
+  margin-bottom: 0;
+}
+
+.aboutthird {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.aboutthird h2 {
+  font-size: 18px;
+  margin-bottom: 35px;
+  margin-top: 20px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.aboutthird h2 .fs {
+  font-size: 12px;
+}
+
+.aboutthird p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.aboutthird__box {
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+}
+
+.aboutthird__item {
+  padding: 5px;
+  width: 25%;
+}
+
+.aboutthird__item img {
+  width: 100%;
+}
+
+.aboutthird .fs {
+  font-size: 12px;
+}
+
 @media (min-width: 768px) {
+  .para {
+    display: inline;
+  }
+  .headding {
+    position: relative;
+    width: 860px;
+    padding: 15px 0;
+    margin-bottom: 20px;
+  }
+  .headding .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .headding .title::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+  }
+  .headding .title::after {
+    width: 50px;
+    height: 50px;
+  }
   .header__inner {
     height: 75px;
     display: -webkit-box;
@@ -317,9 +527,6 @@
     letter-spacing: 1px;
     font-weight: 300;
   }
-  .conversion__link a span {
-    display: inline;
-  }
   .conversion__schedule p {
     margin: 25px 0;
     font-size: 18px;
@@ -328,34 +535,128 @@
   .conversion__schedule p span {
     display: inline;
   }
-  .introduction__headding {
-    padding: 15px 0;
-    position: relative;
-    width: 860px;
-    margin-bottom: 20px;
-  }
-  .introduction__headding span {
-    display: inline;
-  }
-  .introduction__title {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  .introduction__title::before {
-    content: "";
-    width: 50px;
-    height: 50px;
-  }
-  .introduction__title::after {
-    content: "";
-    width: 50px;
-    height: 50px;
-  }
   .introduction__content {
     padding: 40px 0;
   }
+  .introduction__content p {
+    font-size: 16px;
+  }
   .introduction__content p .para {
     display: none;
+  }
+  .about {
+    position: relative;
+    background-color: #fef5e0;
+  }
+  .about .aboution {
+    top: -40px;
+    height: 80px;
+  }
+  .about .aboution p {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 14px;
+  }
+  .about__inner {
+    padding-top: 80px;
+  }
+  .about__inner h3 {
+    font-size: 16px;
+    margin: 40px 0 10px 0;
+  }
+  .about__skills {
+    margin: 30px 20px;
+    padding: 30px;
+    max-width: calc(100%-40px);
+  }
+  .about__skills h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0;
+  }
+  .about__skill {
+    padding: 10px;
+    display: inline-block;
+  }
+  .about__skill img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .about__skill p {
+    margin: 10px 0;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+  .about__skill p .para {
+    display: block;
+  }
+  .aboutsecond {
+    background-image: url(../../images/about.jpg);
+  }
+  .aboutsecond h2 {
+    font-size: 24px;
+    margin: 20px 0;
+    line-height: 1.1;
+    font-weight: 600;
+  }
+  .aboutsecond p {
+    font-size: 18px;
+  }
+  .aboutsecond__container {
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0 30%;
+  }
+  .aboutsecond__container .box {
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .aboutsecond__container .box p {
+    background-color: #ebb94d;
+    font-size: 1４px;
+    font-weight: 600;
+  }
+  .aboutsecond__container .box .text p {
+    margin-bottom: 10px;
+  }
+  .aboutsecond__container .box .text p:first-of-type {
+    margin: 30px 0 15px;
+  }
+  .learning {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 40px 0;
+  }
+  .aboutthird {
+    padding: 20px 0;
+  }
+  .aboutthird h2 {
+    font-size: 24px;
+  }
+  .aboutthird h2 .fs {
+    font-size: 14px;
+  }
+  .aboutthird p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .aboutthird__box {
+    padding: 0 30px;
+    margin: 40px;
+  }
+  .aboutthird__item {
+    padding: 20px;
+  }
+  .aboutthird__item img {
+    width: 180px;
+  }
+  .aboutthird .fs {
+    font-size: 14px;
+    font-weight: 600;
   }
 }
 /*# sourceMappingURL=style.css.map */
