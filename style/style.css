@@ -534,6 +534,55 @@
   padding: 0 10px;
 }
 
+.teacher {
+  background-image: url(../../images/teacher.jpg);
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.teacher h2 {
+  font-size: 18px;
+  margin: 55px 0 10px;
+}
+
+.teacher p {
+  font-size: 12px;
+  margin-top: 45px;
+}
+
+.teacher__box {
+  padding: 0 15px;
+  margin-top: 128px;
+}
+
+.teacher__item {
+  position: relative;
+  border: 3px solid #fff;
+  padding: 40px 10px 10px;
+}
+
+.teacher__item p {
+  margin-top: 0;
+  font-weight: 300;
+}
+
+.teacher__item p.left {
+  text-align: left;
+}
+
+.teacher img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 @media (min-width: 768px) {
   .para {
     display: inline;
@@ -786,6 +835,32 @@
   .merit__bottom {
     font-size: 12px;
     padding: 0 50px;
+  }
+  .teacher {
+    background-image: url(../../images/teacherbg.jpg);
+    background-size: cover;
+    padding: 50px 122px;
+  }
+  .teacher h2 {
+    font-size: 24px;
+  }
+  .teacher p {
+    font-size: 14px;
+  }
+  .teacher__boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .teacher__box {
+    position: relative;
+    margin-top: 128px;
+    width: 50%;
+  }
+  .teacher__item {
+    padding: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */

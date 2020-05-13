@@ -270,3 +270,27 @@
     padding: 0 50px;
   }
 }
+
+.teacher {
+  background-image: url(../../images/teacherbg.jpg);
+  background-size: cover;
+  padding: 50px 122px;
+  & h2 {
+    font-size: 24px;
+  }
+  & p {
+    font-size: 14px;
+  }
+  &__boxes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__box {
+    position: relative;
+    margin-top: 128px;
+    width: 50%;
+  }
+  &__item {
+    padding: 40px;
+  }
+}
