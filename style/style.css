@@ -442,6 +442,98 @@
   font-size: 12px;
 }
 
+.merit {
+  background-color: #fef5e0;
+  text-align: center;
+}
+
+.merit span {
+  font-size: 15px;
+  line-height: 0;
+}
+
+.merit h2 {
+  font-size: 18px;
+}
+
+.merit__inner {
+  padding: 30px 0;
+}
+
+.merit__box {
+  text-align: center;
+  padding: 0 15px;
+}
+
+.merit__item {
+  margin-bottom: 20px;
+}
+
+.merit__bgimage {
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+}
+
+.merit__bgimage.a {
+  background-image: url(../../images/merit1.jpg);
+}
+
+.merit__bgimage.b {
+  background-image: url(../../images/merit2.jpg);
+}
+
+.merit__bgimage.c {
+  background-image: url(../../images/merit3.jpg);
+}
+
+.merit__text {
+  padding: 0 20px;
+}
+
+.merit__text h3 {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  color: #ebb94d;
+  font-size: 15px;
+}
+
+.merit__text p {
+  font-size: 12px;
+  text-align: left;
+}
+
+.merit__suport {
+  text-align: center;
+  margin: 15px 20px;
+  padding: 10px;
+  border: 2px solid #ebb94d;
+  background-color: #fff;
+  font-weight: 300;
+}
+
+.merit__suport .p {
+  display: none;
+}
+
+.merit__suport h3 {
+  font-size: 18px;
+}
+
+.merit__suport h3.fs {
+  font-size: 15px;
+}
+
+.merit__suport p {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.merit__bottom {
+  font-size: 12px;
+  padding: 0 10px;
+}
+
 @media (min-width: 768px) {
   .para {
     display: inline;
@@ -657,6 +749,43 @@
   .aboutthird .fs {
     font-size: 14px;
     font-weight: 600;
+  }
+  .merit__box {
+    padding: 0 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 40px;
+  }
+  .merit__item {
+    margin-bottom: 20px;
+    width: 33%;
+    margin: 5px;
+  }
+  .merit__bgimage {
+    height: 180px;
+  }
+  .merit__suport {
+    margin: 15px 80px;
+    margin-bottom: 40px;
+    padding: 40px 20px;
+    font-weight: 600;
+  }
+  .merit__suport .p {
+    display: block;
+  }
+  .merit__suport h3 {
+    font-size: 24px;
+  }
+  .merit__suport h3.fs {
+    font-size: 16px;
+  }
+  .merit__suport p {
+    font-size: 14px;
+  }
+  .merit__bottom {
+    font-size: 12px;
+    padding: 0 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */

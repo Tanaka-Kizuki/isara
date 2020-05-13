@@ -232,3 +232,41 @@
     font-weight: 600;
   }
 }
+
+.merit {
+  &__box {
+    padding: 0 50px;
+    display: flex;
+    margin-bottom: 40px;
+  }
+  &__item {
+    margin-bottom: 20px;
+    width: 33%;
+    margin: 5px;
+  }
+  &__bgimage {
+    height: 180px;
+  }
+  &__suport {
+    & .p {
+      display: block;
+    }
+    margin: 15px 80px;;
+    margin-bottom: 40px;
+    padding: 40px 20px;;
+    font-weight: 600;
+    & h3 {
+      font-size: 24px;
+      &.fs {
+        font-size: 16px;
+      }
+    }
+    & p {
+      font-size: 14px;
+    }
+  }
+  &__bottom {
+    font-size: 12px;
+    padding: 0 50px;
+  }
+}
